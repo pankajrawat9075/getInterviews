@@ -55,7 +55,6 @@ messages = [SystemMessagePromptTemplate(prompt=PromptTemplate(input_variables=[]
 
 prompt = ChatPromptTemplate.from_messages(
         messages
-
 )
 
 # build retriever tool
