@@ -31,3 +31,7 @@ Applying for jobs is boring, let getInterviews handle it.
     git clone -b get_interviews_feature https://github.com/pankajrawat9075/browser-use.git
     ```
     Use `get_interviews_feature` branch to modify `browser_use` functionalities.
+
+## Running Gradio APP
+
+    python gradio_app.py
