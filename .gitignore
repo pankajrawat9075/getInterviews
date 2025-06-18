@@ -188,3 +188,5 @@ config_llm.json
 
 #notes
 notes*
+roughbook
+agent_output.txt
