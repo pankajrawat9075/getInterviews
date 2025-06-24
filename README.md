@@ -3,35 +3,42 @@ Applying for jobs is boring, let getInterviews handle it.
 
 ## 🚀 Project Setup Checklist
 
-- [x] **Clone and move to the repository**
+- [x] **Clone and move to getInterviews repository**
     ```bash
     git clone https://github.com/pankajrawat9075/getInterviews.git
     cd getInterviews
     ```
+
+- [x] **Clone browser_use fork and move into browser-use directory**
+    ```bash
+    git clone -b get_interviews_feature https://github.com/pankajrawat9075/browser-use.git
+    cd browser-use
+    ```
+
 - [x] **Create and activate Virtual env**
 
     **CMD**
     ```bash
-    python -m venv venv
-    venv\Scripts\activate
+    pip install uv
+    uv venv --python 3.11
+    .venv\Scripts\activate.bat
     ```
 
     **Linux / Mac / WSL**
     ```bash
-    python3 -m venv venv
-    source venv/bin/activate
+    uv venv --python 3.11
+    source .venv/bin/activate
     ```
-- [x] **Install pip dependencies**
+- [x] **Install dependencies**
     ```bash
-    pip install -U -r requirements.txt
+    uv sync --all-extras
+    playwright install chromium --with-deps --no-shell
     ```
 
-- [x] **Clone browser_use fork**
+- [x] **Install browser-use as editable package**
     ```bash
-    git clone -b get_interviews_feature https://github.com/pankajrawat9075/browser-use.git
+    cd ..
+    uv pip install -e browser-use
     ```
-    Use `get_interviews_feature` branch to modify `browser_use` functionalities.
 
-## Running Gradio APP
 
-    python gradio_app.py
