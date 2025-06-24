@@ -11,7 +11,7 @@ Applying for jobs is boring, let getInterviews handle it.
 
 - [x] **Clone browser_use fork and move into browser-use directory**
     ```bash
-    git clone -b get_interviews_feature https://github.com/pankajrawat9075/browser-use.git
+    git clone https://github.com/pankajrawat9075/browser-use.git
     cd browser-use
     ```
 
